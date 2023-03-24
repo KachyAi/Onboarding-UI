@@ -1,0 +1,109 @@
+body {
+  font-family: "poppins";
+  background-color: #f7f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  height: 100vh;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 30px #f1effc;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header_icon img {
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.about {
+  padding: 1em;
+  padding-left: 1em;
+}
+
+.loading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loading_bar {
+  width: 80%;
+  height: 10px;
+  border-radius: 25px;
+  margin-top: 30px;
+  margin-left: 0;
+  padding: 1px;
+  background-color: #f7f6ff;
+}
+
+.loading_line {
+  border: 1px solid #000;
+  height: 10px;
+  background-color: #333;
+  border-radius: 25px;
+  animation: loading 2s forwards cubic-bezier(0, 0, 0, 0);
+}
+
+.content {
+  font-weight: 600;
+  /* font-size: 16px; */
+  /* padding: 1em; */
+  /* margin-left: auto; */
+  /* width: 80%; */
+}
+.first {
+  margin-left: 1em;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+.text {
+  width: 80%;
+}
+
+.checkbox {
+  width: 20%;
+}
+
+.first > input[type="checkbox"] {
+  margin-right: 50px;
+}
+
+hr {
+  width: 99%;
+  /* background-color: #f1effc; */
+  color: #f1effc;
+  border: 1px solid #f1effc;
+}
+
+.footer {
+  margin-left: 2em;
+}
+
+@keyframes loading {
+  0% {
+    width: 1%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    margin-top: 0;
+  }
+}
